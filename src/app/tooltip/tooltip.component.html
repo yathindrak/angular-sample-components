@@ -1,0 +1,17 @@
+<div class="tooltip">
+  <span
+    class="tooltip-anchor"
+    (mouseover)="openToolTip()"
+    (mouseout)="closeToolTip($event)"
+  >
+    Hover Me
+  </span>
+  <div class="popover" *ngIf="showToolTip">
+    <div class="arrow"></div>
+    <div class="popover-content">
+      <span class="info-popover-content">
+        {{ message }}
+      </span>
+    </div>
+  </div>
+</div>
